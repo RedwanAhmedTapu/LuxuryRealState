@@ -71,7 +71,7 @@ const Dashboard = () => {
               <div className="ml-4 w-full">
                 <div className="flex items-center justify-between">
                   <h6 className="text-lg font-medium text-gray-800">
-                    John Doe
+                    Redwan Ahmed
                   </h6>
                   <small className="text-gray-500">15 minutes ago</small>
                 </div>
