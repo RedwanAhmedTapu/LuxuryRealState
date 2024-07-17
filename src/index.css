@@ -21,6 +21,17 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #111c43;
   }
+  /* index.css or any global CSS file */
+.fixed-top-navbar {
+  position: fixed;
+  
+  top: 0;
+  left: 8rem; /* Adjust according to your layout */
+  width:90%;/* Adjust according to your layout */
+  padding-right: 2rem;
+  z-index: 50; /* High enough to be above other elements */
+}
+
   .circle1 {
     top: 0;
     left: 1.75rem;

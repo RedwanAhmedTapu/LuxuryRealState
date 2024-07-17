@@ -33,7 +33,7 @@ const App = () => {
           {/* Main Content */}
           <div className={`col-span-10 col-start-2 flex flex-col transition-all duration-300 ${isExpanded && "ml-28"}`}>
             {/* Navbar */}
-            <div className={`fixed top-0 left-20 w-full col-span-10 bg-gray-300 transition-all duration-300 ${isExpanded && "ml-28"}`}>
+            <div className={`fixed-top-navbar top-0 left-20 w-full col-span-10  transition-all duration-300 ${isExpanded && "ml-32"}`}>
               <Navbar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
             </div>
 
