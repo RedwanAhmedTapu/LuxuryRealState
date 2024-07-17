@@ -5,20 +5,55 @@
 /* index.css or global.css */
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
     height: 40px;
   }
   
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #111c43;
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: #596aa6;
     border-radius: 4px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #111c43;
+  }
+  .circle1 {
+    top: 0;
+    left: 1.75rem;
+    animation-delay: -1s;
+  }
+  
+  .circle2 {
+    top: 0.25rem;
+    left: 1rem;
+    animation-delay: -0.8s;
+  }
+  
+  .circle3 {
+    top: 1rem;
+    left: 0.5rem;
+    animation-delay: -0.6s;
+  }
+  
+  .circle4 {
+    top: 2.5rem;
+    left: 1rem;
+    animation-delay: -0.4s;
+  }
+  
+  .circle5 {
+    top: 3rem;
+    left: 1.75rem;
+    animation-delay: -0.2s;
+  }
+  
+  .circle6 {
+    top: 2.5rem;
+    left: 2.5rem;
+    animation-delay: 0s;
   }
   

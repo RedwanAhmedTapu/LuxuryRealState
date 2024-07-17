@@ -9,6 +9,7 @@ import {
   FaExpand,
   FaCompress,
 } from "react-icons/fa";
+import ProfileSidebar from "./ProfileSidebar";
 
 const Navbar = ({ isExpanded, setIsExpanded }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = ({ isExpanded, setIsExpanded }) => {
   };
 
   return (
-    <nav className=" text-teal-800 bg-white   flex justify-between items-center px-20 py-4">
+    <nav className="text-teal-800 bg-white flex justify-between items-center px-20 py-4 z-50">
       {/* Left Side (Menu, Fullscreen, and Search) */}
       <div className="flex items-center space-x-4">
         {/* Menu Button for Mobile */}
@@ -66,7 +67,7 @@ const Navbar = ({ isExpanded, setIsExpanded }) => {
       </div>
 
       {/* Right Side (Language Selector, Cart, Notifications, Profile) */}
-      <div className={`flex items-center space-x-8 mr-12 ${isExpanded && "mr-48"}`}>
+      <div className={`flex items-center space-x-8 ${isExpanded ? "mr-48" : "mr-12"}`}>
         {/* Language Selector */}
         <div className="relative hidden md:block">
           <button
@@ -115,18 +116,11 @@ const Navbar = ({ isExpanded, setIsExpanded }) => {
             <FaUserCircle />
           </button>
           {isProfileOpen && (
-            <div className="absolute top-full right-0 bg-white text-black rounded-lg p-2 mt-2 w-40 shadow-lg">
-              <div className="flex flex-col">
-                <div className="flex items-center space-x-2 cursor-pointer hover:bg-gray-100 px-2 py-1 rounded-md">
-                  Profile
-                </div>
-                <div className="flex items-center space-x-2 cursor-pointer hover:bg-gray-100 px-2 py-1 rounded-md">
-                  Settings
-                </div>
-                <div className="flex items-center space-x-2 cursor-pointer hover:bg-gray-100 px-2 py-1 rounded-md">
-                  Logout
-                </div>
-              </div>
+            <div className="bg-[#031224] absolute top-16 right-0 z-50">
+              <ProfileSidebar
+                isOpen={isProfileOpen}
+                onClose={() => setIsProfileOpen(false)}
+              />
             </div>
           )}
         </div>
