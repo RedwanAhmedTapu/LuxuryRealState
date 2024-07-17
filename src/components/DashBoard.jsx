@@ -3,7 +3,6 @@ import UserImage from "../assets/userImage.png";
 import HomeCard from "./HomeCard";
 import Calendar from "./Calendar";
 import ToDolIst from "./ToDolIst";
-import SalesRevenue from "./SalesRevenue";
 import Form from "./Form";
 import Datatable from "./DataTable";
 
