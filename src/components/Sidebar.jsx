@@ -155,7 +155,7 @@ const Sidebar = ({ isExpanded, setIsExpanded }) => {
 
   return (
     <div
-      className={`flex flex-col h-screen  transition-width font-sans text-[#a8b2d4] duration-300 z-50 ${
+      className={`flex flex-col h-full overflow-scroll  transition-width font-sans text-[#a8b2d4] duration-300 z-50 ${
         isExpanded
           ? "w-64 px-4 bg-[#111c43] backdrop-blur-md border border-white border-opacity-10 shadow-lg"
           : "w-20 bg-[#111c43] backdrop-blur-md border border-white border-opacity-10 shadow-lg"
